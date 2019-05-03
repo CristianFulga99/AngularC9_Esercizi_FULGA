@@ -15,16 +15,23 @@ export class AppComponent {
     this.myForm = fb.group({'numero1' : ['1', Validators.required],'nuemero2' : ['2', Validators.required]
     });
   }
-somma():void{
-  this.risulto = Number(this.myForm.controls['numero1'].values) + Number(this.myForm.controls['numero1'].values);
-}
-moltiplicazione():void{
-  this.risulto = Number(this.myForm.controls['numero1'].values) + Number(this.myForm.controls['numero1'].values);
-}
-moltiplicazione():void{
-  this.risulto = Number(this.myForm.controls['numero1'].values) + Number(this.myForm.controls['numero1'].values);
-}
-divisione():void{
-  this.risulto = Number(this.myForm.controls['numero1'].values) + Number(this.myForm.controls['numero1'].values);
-}
+  somma() {
+   this.risultato = Number(this.myForm.controls['numero1'].value) + Number(this.myForm.controls['numero2'].value);
+   return false;
+  }
+
+  sottrazione() {
+   this.risultato = Number(this.myForm.controls['numero1'].value) - Number(this.myForm.controls['numero2'].value);
+   return false;
+  }
+
+  moltiplicazione() {
+   this.risultato = Number(this.myForm.controls['numero1'].value) * Number(this.myForm.controls['numero2'].value);
+   return false;
+  }
+  
+  divisione() {
+   this.risultato = Number(this.myForm.controls['numero1'].value) / Number(this.myForm.controls['numero2'].value);
+   return false;
+  }
 }
