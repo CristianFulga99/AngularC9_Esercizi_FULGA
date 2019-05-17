@@ -12,7 +12,7 @@ export class AppComponent {
   risultato: Number;
 
   constructor(fb: FormBuilder){
-    this.myForm = fb.group({'numero1' : ['1', Validators.required],'nuemero2' : ['2', Validators.required]
+    this.myForm = fb.group({'numero1' : ['1', Validators.required],'numero2' : ['2', Validators.required]
     });
   }
   somma() {
