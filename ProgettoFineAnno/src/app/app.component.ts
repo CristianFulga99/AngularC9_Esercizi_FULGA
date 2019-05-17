@@ -12,10 +12,20 @@ export class AppComponent {
 
   myForm: FormGroup;
   utenti = Utenti;
+  hide : Boolean = false;
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({'nome': ['Nome', Validators.required], 'cognome': ['Cognome', Validators.required], 'username': ['username', Validators.required], 'password': ['12345678', Validators.required], 'email': ['example@email.com', Validators.compose([Validators.required, Validators.email])], 'telefono': ['3333333333', Validators.required]
     });
+  }
+
+  toggleVar(){
+    if(!this.hide){
+      this.hide = true;
+  }
+  else{
+    this.hide = false;
+  }
   }
 
     onSubmit(): boolean {
