@@ -10,9 +10,3 @@ input {
 .ng-invalid:not(form)  {
   border: 2px solid #ff0000;
 }
-
-.container-grid {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-gap: 20px;
-}
