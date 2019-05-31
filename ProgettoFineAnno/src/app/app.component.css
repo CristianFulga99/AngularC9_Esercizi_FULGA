@@ -1,26 +1,18 @@
-@import '~bootstrap/dist/css/bootstrap.css';
-
 input {
   height: 30px;
   font-size: 15px;
 }
 
-.alert {
-  height: 30px;
-  margin: 5px;
-  padding: 0;
-}
-
 .ng-valid:not(form) {
-  border: 2px solid #42A948;
+  border: 2px solid #00ff00;
 }
 
 .ng-invalid:not(form)  {
-  border: 2px solid #a94442;
+  border: 2px solid #ff0000;
 }
 
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   grid-gap: 20px;
 }
